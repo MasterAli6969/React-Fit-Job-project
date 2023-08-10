@@ -1,0 +1,144 @@
+.burger_div_icon_conteiner {
+  position: relative;
+  background-color: #010511;
+  width: 100%;
+  height: 150px;
+}
+
+.burger_logo {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.header_div_Burger_linck_style {
+  position: fixed;
+  background-color: #64c1c4;
+  height: 600px;
+  width: 45%;
+  top: 0;
+  left: -100%;
+  transition: transform 0.8s ease;
+  z-index:998;
+}
+
+.header_div_Burger_linck_style._modif {
+  transform: translateX(222%);
+}
+
+.header_ul_Burger_linck_style {
+  position: absolute;
+  top: 60px;
+  display: block;
+  list-style: none;
+  padding: 5%;
+  margin: 0 0 0 0;
+  z-index: 2;
+}
+
+.header_li_Burger_linck_style {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 30px 50px;
+}
+
+.header_a_Burger_linck_style {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header_a_Burger_linck_style:hover {
+  padding: 10px;
+  color: #64c1c4;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/*все стили ниже для иконки бургера открытия меню*/
+.burger_icon_conteiner {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.burger_icon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+.burger_icon::after {
+  position: absolute;
+  top: 10px;
+  content: "";
+  background-color: white;
+  width: 30px;
+  height: 3px;
+}
+
+.burger_icon::before {
+  position: absolute;
+  top: 20px;
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  transition: transform 0.3s ease;
+}
+
+/*все стили ниже для изменённой иконки бургера меню*/
+
+.burger_icon_conteiner._lockIcon .burger_icon {
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+.burger_icon_conteiner._lockIcon .burger_icon::before {
+  transform: rotate(90deg) translate(0, -15px);
+  top: 0;
+  left: -15px;
+}
+
+.burger_icon_conteiner._lockIcon .burger_icon::after {
+  display: none;
+}
+
+.burger_icon_conteiner:hover {
+  background-color: #64c1c4;
+  border-radius: 50px;
+}
+
+/*СТИЛИ ДЛЯ ДОП КОНТЕНТА МЕНЮ, ЛОГО И СПИСКА ССЫЛОК*/
+.header_Burger_Logo {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 40px;
+  height: 35px;
+}
+
+.header_div_Burger_IconNumbe_linck {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header_burger_li_number_icon_style {
+  margin: 0 0 0 12px;
+}
