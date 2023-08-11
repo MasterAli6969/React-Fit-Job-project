@@ -1,0 +1,142 @@
+/*ЭТО СТИЛИ ДЛЯ КАРТОЧЕКА ТАРИФОВ*/
+.fourth_page_global_conteiner {
+  width: 100%;
+  min-height: 0;
+  background-image: url("../../../../public/image/Group 640.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 20%;
+}
+
+.fourth_page_service_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3% 3%;
+}
+
+.fourth_page_service_cards_item {
+  position: relative;
+  width: 330px;
+  height: 400px;
+  background-color: #161616;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.fourth_page_service_cards_title {
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fourth_page_service_cards_list {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.fourth_page_service_cards_lincks {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+  background-color: #da2f35;
+  border-radius: 10px;
+  padding-top: 3%;
+}
+
+/*НИЖЕ БУДУЬ СТИЛИ ДЛЯ ФОРМЫ*/
+
+.fourth_block_footer_form_coneiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.fourth_block_footer_form_title {
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  color: #da2f35;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fourth_block_footer_form_input {
+  width: 411px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.fourth_block_footer_form_label_checkbox {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.fourth_block_footer_form_checkbox {
+}
+
+.fourth_block_footer_form_button {
+  background-color: #da2f35;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.fourth_block_footer_form_text_1 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.fourth_block_footer_form_text_2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@media (max-width: 890px) {
+  .fourth_page_service_cards_item {
+    width: 230px;
+    height: 350px;
+  }
+  .fourth_page_service_cards_title {
+    font-size: 23px;
+  }
+
+  .fourth_page_service_cards_lincks {
+    font-size: 15px;
+  }
+  .fourth_page_service_cards_list {
+    top: 100px;
+  }
+  .fourth_block_footer_form_input {
+    display: flex;
+    justify-content: center;
+  }
+  .fourth_block_footer_form_title {
+    width: 70%;
+    font-size: 23px;
+  }
+}

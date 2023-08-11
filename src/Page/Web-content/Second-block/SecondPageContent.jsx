@@ -1,4 +1,5 @@
 import CustomService from "../../../Сustom components/CustomService";
+import "./second_page.css";
 function SecondPageContent() {
   const secondPageContentArrayObj = [
     {
@@ -28,8 +29,8 @@ function SecondPageContent() {
   ];
 
   const secondPageContentStyleObj = {
-    customUlStyle: "second_page_service_cards",
-    customLiStyle: "second_page_service_cards_item",
+    customSubDivStyle: "second_page_service_cards",
+    customSubSubDivStyle: "second_page_service_cards_item",
     customH4Style: "second_page_service_cards_title",
     customAStyle: "second_page_service_cards_lincks",
   };

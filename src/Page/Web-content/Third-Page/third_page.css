@@ -1,0 +1,67 @@
+.third_page_sub_global_conteiner {
+  width: 97%;
+  min-height: 0;
+  background-image: url("../../../../public/image/Group\ 638.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 3% 0 0 3%;
+  overflow: hidden;
+}
+
+.third_block_sub_big_title {
+  width: 70%;
+  font-size: 64px;
+  margin-bottom: 3%;
+}
+
+.third_block_sub_conteiner_title_small {
+  width: 30%;
+}
+
+.third_block_sub_small_title {
+  font-size: 36px;
+}
+
+.third_block_button {
+  background-color: #da2f37;
+  border: none;
+  border-radius: 10px;
+  width: 237px;
+  height: 60px;
+  font-size: 20px;
+  margin: 5% 0 5% 0;
+}
+
+@media (max-width: 768px) {
+  .third_page_global_conteiner {
+    width: 93%;
+    min-height: 0;
+    padding: 0 3% 0 3%;
+  }
+
+  .third_page_sub_global_conteiner {
+    border: 1px solid #da2f37;
+    border-radius: 15px;
+    margin-bottom: 3%;
+  }
+
+  .third_block_sub_big_title {
+    width: 85%;
+    font-size: 28px;
+  }
+  .third_block_sub_conteiner_title_small {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%;
+  }
+  .third_block_sub_small_title {
+    font-size: 15px;
+  }
+  .third_block_button {
+    width: 173px;
+    height: 50px;
+    margin: 0 2% 0 0;
+  }
+}
