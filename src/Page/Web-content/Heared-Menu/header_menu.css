@@ -1,0 +1,61 @@
+.header_menu_conteiner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 0;
+  font-size: 20px;
+}
+
+.header_menu_conteiner_left {
+}
+
+.header_menu_logo {
+}
+
+.header_menu_conteiner_Right {
+  width: 90%;
+  justify-content: flex-end;
+}
+
+/*стили десктоп меню*/
+
+.header_menu_div,
+.header_menu_sub_div {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.header_menu_div_links {
+  margin-right: 5%;
+}
+
+.header_menu_text {
+  color: #DA2F37;
+  margin-right: 6%;
+}
+
+.header_menu_sub_div {
+  width: 30%;
+}
+
+.header_menu_icon {
+}
+
+.header_menu_button {
+  margin-right: 10%;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+.header_menu_button:hover {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 0 5% 0 5%;
+  background-color: red;
+}

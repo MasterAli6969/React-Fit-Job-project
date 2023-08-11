@@ -1,0 +1,50 @@
+const firstBlockTitleArray1 = [
+    {
+      id: 1,
+      text: "FITJOB ФИТНЕС-КЛУБЫ ПРЕМИУМ КЛАССА В САНКТ-ПЕТЕРБУРГЕ",
+      coloredWords: ["FITJOB", "ПРЕМИУМ", "КЛАССА"],
+    },
+  ];
+
+  const firstBlockTitleStyleObj1 = {
+    customTextConteiner: "first_block_text_conteiner_Big",
+    customSpecialWord: "first_block_red_words_Big",
+    customWord: "first_block_words_Big",
+  };
+
+  const firstBlockTitleArray2 = [
+    {
+      id: 2,
+      text: "У вас есть возможность посетить 3 бесплатные тренировки",
+      coloredWords: ["3", "бесплатные"],
+      button1: "Бесплатная консультация",
+      button2: "Стать клиентом",
+    },
+  ];
+  const firstBlockTitleStyleObj2 = {
+    customTextConteiner: "first_block_text_conteiner_Small",
+    customSpecialWord: "first_block_red_words_Small",
+    customWord: "first_block_words_Small",
+    customButtonStyle1: "first_block_button1",
+    customButtonStyle2: "first_block_button2",
+  };
+  return (
+    <div className="first_block_sub_conteiner">
+      <div className="first_block_sub_conteiner_left">
+        <CustomTitle
+          textData={firstBlockTitleArray1}
+          customClass={firstBlockTitleStyleObj1}
+        />
+        <CustomTitle
+          textData={firstBlockTitleArray2}
+          customClass={firstBlockTitleStyleObj2}
+        />
+      </div>
+      <div className="first_block_sub_conteiner_right">
+        <img
+          className="first_block_image_fit"
+          src={process.env.PUBLIC_URL + "/image/Фит девушка.png"}
+        />
+      </div>
+    </div>
+  );

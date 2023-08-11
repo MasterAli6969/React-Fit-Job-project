@@ -1,19 +1,49 @@
-.burger_div_icon_conteiner {
-  position: relative;
-  background-color: #010511;
-  width: 100%;
-  height: 150px;
+
+/*все стили ниже для иконки бургера открытия меню*/
+.burger_icon_conteiner {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  margin: 0 0 0 0;
+  z-index: 999;
+  cursor: pointer;
 }
 
-.burger_logo {
+.burger_icon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+.burger_icon::after {
   position: absolute;
   top: 10px;
-  right: 0;
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 3px;
+}
+
+.burger_icon::before {
+  position: absolute;
+  top: 20px;
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  transition: transform 0.3s ease;
 }
 
 .header_div_Burger_linck_style {
   position: fixed;
-  background-color: #64c1c4;
+  background-color: black;
   height: 600px;
   width: 45%;
   top: 0;
@@ -38,7 +68,6 @@
 
 .header_li_Burger_linck_style {
   text-decoration: none;
-  color: black;
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 30px 50px;
@@ -46,59 +75,16 @@
 
 .header_a_Burger_linck_style {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
 .header_a_Burger_linck_style:hover {
-  padding: 10px;
-  color: #64c1c4;
+  color: red;
   font-size: 25px;
-  background-color: white;
-  border-radius: 20px;
 }
 
-/*все стили ниже для иконки бургера открытия меню*/
-.burger_icon_conteiner {
-  position: relative;
-  top: 20px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
-  margin: 0 0 0 0;
-  z-index: 999;
-  cursor: pointer;
-}
 
-.burger_icon {
-  position: absolute;
-  top: 7px;
-  left: 10px;
-  background-color: white;
-  width: 40px;
-  height: 3px;
-  margin: 10px auto;
-  transition: transform 0.3s ease;
-}
-
-.burger_icon::after {
-  position: absolute;
-  top: 10px;
-  content: "";
-  background-color: white;
-  width: 30px;
-  height: 3px;
-}
-
-.burger_icon::before {
-  position: absolute;
-  top: 20px;
-  content: "";
-  background-color: white;
-  width: 40px;
-  height: 3px;
-  transition: transform 0.3s ease;
-}
 
 /*все стили ниже для изменённой иконки бургера меню*/
 
@@ -118,7 +104,7 @@
 }
 
 .burger_icon_conteiner:hover {
-  background-color: #64c1c4;
+  background-color: red;
   border-radius: 50px;
 }
 
@@ -127,7 +113,7 @@
   position: absolute;
   top: 30px;
   right: 10px;
-  width: 40px;
+  width: 100px;
   height: 35px;
 }
 

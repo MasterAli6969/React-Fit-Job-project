@@ -1,29 +1,40 @@
-function CustomService(props) {
+function CustomList(props) {
   const { linkArray, customClass } = props;
   return (
-    <div className={`${customClass.customDivStyle}`}>
-      <div
-        className={`${customClass.customLineStyle} ${customClass.customADDLineStyle}`}
-      />
-      <ul
-        className={`${customClass.customUlStyle} ${customClass.customAddUlStyle}`}
-      >
-        {linkArray.map((link) => {
+    <ul
+      className={`${customClass.customUlStyle} ${customClass.customAddUlStyle}`}
+    >
+      {linkArray.map((item) => {
+        if (item) {
           return (
-            <li className={` ${customClass.customLiStyle}`} key={link.id}>
-              <p className={` ${customClass.customPStyle}`}> {link.text}</p>
-              <a className={` ${customClass.customAStyle}`} href={link.url}>
-                <img
-                  className={`${customClass.customImgStyle}`}
-                  src={link.image}
-                />
-                {link.link}
-              </a>
-            </li>
+            <>
+              <li className={` ${customClass.customLiStyle}`} key={item.id}>
+                <a className={` ${customClass.customAStyle}`} href={item.url}>
+                  {item.link}
+                </a>
+              </li>
+              {item.customDiv && (
+                <div className={` ${customClass.customSubDivStyle}`}>
+                  <img
+                    className={`${customClass.customImgStyle}`}
+                    src={item.customDiv.image}
+                  />
+                  <button className={` ${customClass.customButtonStyle}`}>
+                    {item.customDiv.button}
+                  </button>
+                  <p className={` ${customClass.customPStyle}`}>
+                    {" "}
+                    {item.customDiv.text}
+                  </p>
+                </div>
+              )}
+            </>
           );
-        })}
-      </ul>
-    </div>
+        } else {
+          return null;
+        }
+      })}
+    </ul>
   );
 }
-export default CustomService;
+export default CustomList;

@@ -1,0 +1,65 @@
+.second_page_global_conteiner {
+  width: 100%;
+  min-height: 0;
+  background-color: #0b0b0b;
+  color: white;
+}
+
+.second_page_service_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3% 3%;
+}
+
+.second_page_service_cards_item {
+  position: relative;
+  width: 330px;
+  height: 600px;
+  background-image: url("../../../../public/image/Rectangle\ 17.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.second_page_service_cards_title {
+  width: 60%;
+  position: absolute;
+  bottom: 70px;
+  left: 15px;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.second_page_service_cards_lincks {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #da2f35;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding-top: 3%;
+}
+
+@media (max-width: 565px) {
+    .second_page_service_cards_item{
+        width: 230px;
+        height: 350px;
+    }
+    .second_page_service_cards_title{
+        font-size: 23px;
+    }
+
+    .second_page_service_cards_lincks{
+        font-size: 15px;
+    }
+}

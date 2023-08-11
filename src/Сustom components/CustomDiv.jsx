@@ -4,7 +4,7 @@ function CustomDiv(props) {
     <>
       {divArray.map((component) => (
         <div
-          className={`${customClass.customDivStyleConteiner} ${customClass.additionalivStyleConteiner}`}
+          className={`${customClass.customDivStyleConteiner}`}
           key={component.id}
         >
           <>
