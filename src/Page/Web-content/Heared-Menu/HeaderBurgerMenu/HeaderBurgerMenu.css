@@ -1,4 +1,3 @@
-
 /*все стили ниже для иконки бургера открытия меню*/
 .burger_icon_conteiner {
   position: absolute;
@@ -49,7 +48,7 @@
   top: 0;
   left: -100%;
   transition: transform 0.8s ease;
-  z-index:998;
+  z-index: 998;
 }
 
 .header_div_Burger_linck_style._modif {
@@ -83,8 +82,6 @@
   color: red;
   font-size: 25px;
 }
-
-
 
 /*все стили ниже для изменённой иконки бургера меню*/
 
@@ -122,4 +119,10 @@
 
 .header_burger_li_number_icon_style {
   margin: 0 0 0 12px;
+}
+
+@media (max-width: 767px) {
+  .burger_icon_conteiner {
+    position: fixed;
+  }
 }

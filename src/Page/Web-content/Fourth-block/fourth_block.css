@@ -7,7 +7,7 @@
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .fourth_page_service_cards {
@@ -127,6 +127,7 @@
   }
 
   .fourth_page_service_cards_lincks {
+    padding-top: 6%;
     font-size: 15px;
   }
   .fourth_page_service_cards_list {
