@@ -16,13 +16,28 @@
   position: relative;
   width: 330px;
   height: 600px;
-  background-image: url("../../../../public/image/Rectangle\ 17.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid red;
   border-radius: 10px;
   margin: 10px;
+}
+
+.second_page_service_cards_img1 {
+  background-image: url("../../../../public/image/Rectangle16.png");
+}
+
+.second_page_service_cards_img2 {
+  background-image: url("../../../../public/image/Rectangle\ 17.png");
+}
+
+.second_page_service_cards_img3 {
+  background-image: url("../../../../public/image/Rectangle\ 18.png");
+}
+
+.second_page_service_cards_img4 {
+  background-image: url("../../../../public/image/Rectangle\ 19.png");
 }
 
 .second_page_service_cards_title {
@@ -50,16 +65,16 @@
   padding-top: 3%;
 }
 
-@media (max-width: 565px) {
-    .second_page_service_cards_item{
-        width: 230px;
-        height: 350px;
-    }
-    .second_page_service_cards_title{
-        font-size: 23px;
-    }
+@media (max-width: 767px) {
+  .second_page_service_cards_item {
+    width: 230px;
+    height: 350px;
+  }
+  .second_page_service_cards_title {
+    font-size: 23px;
+  }
 
-    .second_page_service_cards_lincks{
-        font-size: 15px;
-    }
+  .second_page_service_cards_lincks {
+    font-size: 15px;
+  }
 }

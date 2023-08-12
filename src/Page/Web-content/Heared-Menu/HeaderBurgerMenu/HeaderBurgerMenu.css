@@ -103,11 +103,6 @@
   display: none;
 }
 
-.burger_icon_conteiner:hover {
-  background-color: red;
-  border-radius: 50px;
-}
-
 /*СТИЛИ ДЛЯ ДОП КОНТЕНТА МЕНЮ, ЛОГО И СПИСКА ССЫЛОК*/
 .header_Burger_Logo {
   position: absolute;

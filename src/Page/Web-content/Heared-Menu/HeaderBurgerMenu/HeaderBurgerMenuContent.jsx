@@ -4,28 +4,29 @@ function HeaderBurgerMenuContent(props) {
   const { isVisible } = props;
   const HeaderNavLinks = [
     {
+      id: 1,
       url: "#",
-      link: "О компании",
+      link: "Клубы",
     },
     {
+      id: 2,
       url: "#",
-      link: "Проекты",
+      link: "Абонементы",
     },
     {
+      id: 3,
       url: "#",
-      link: "Услуги",
+      link: "Тренеры",
     },
     {
+      id: 4,
       url: "#",
-      link: "Образование",
+      link: "Тренировки",
     },
     {
+      id: 5,
       url: "#",
-      link: "Отзывы",
-    },
-    {
-      url: "#",
-      link: "Контакты",
+      link: "Расписание",
     },
   ];
 

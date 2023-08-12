@@ -7,24 +7,28 @@ function SecondPageContent() {
       title: "Персональный тренинг",
       link: "Подробнее",
       url: "#",
+      backgroundClass: "second_page_service_cards_img1",
     },
     {
       id: 1,
       title: "Тренажерный зал",
       link: "Подробнее",
       url: "#",
+      backgroundClass: "second_page_service_cards_img2",
     },
     {
       id: 1,
       title: "Бассейн и спа зона",
       link: "Подробнее",
       url: "#",
+      backgroundClass: "second_page_service_cards_img3",
     },
     {
       id: 1,
       title: "Групповые занятия",
       link: "Подробнее",
       url: "#",
+      backgroundClass: "second_page_service_cards_img4",
     },
   ];
 

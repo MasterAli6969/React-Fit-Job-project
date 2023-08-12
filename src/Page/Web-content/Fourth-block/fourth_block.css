@@ -114,9 +114,10 @@
 .fourth_block_footer_form_text_2 {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 767px) {
   .fourth_page_service_cards_item {
     width: 230px;
     height: 350px;

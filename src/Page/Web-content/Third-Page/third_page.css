@@ -1,3 +1,7 @@
+.third_page_global_conteiner {
+  background-color: #0b0b0b;
+}
+
 .third_page_sub_global_conteiner {
   width: 97%;
   min-height: 0;
@@ -34,7 +38,7 @@
   margin: 5% 0 5% 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .third_page_global_conteiner {
     width: 93%;
     min-height: 0;

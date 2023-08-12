@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./fourth_block.css";
 function FourthBlockFooterForm() {
   return (
@@ -6,7 +5,7 @@ function FourthBlockFooterForm() {
       <h1 className="fourth_block_footer_form_title">
         Желаете узнать подробнее, оставьте заявку и мы вам перезвоним
       </h1>
-      <div >
+      <div>
         <input
           className="fourth_block_footer_form_input"
           type="text"

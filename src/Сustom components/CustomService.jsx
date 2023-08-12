@@ -2,11 +2,9 @@ function CustomService(props) {
   const { linkArray = [], customClass = {} } = props;
   return (
     <div className={`${customClass.customDivStyle}`}>
-      <div
-        className={`${customClass.customSubDivStyle} ${customClass.customAddUlStyle}`}
-      >
+      <div className={`${customClass.customSubDivStyle}`}>
         {linkArray.map((link) => (
-          <div className={` ${customClass.customSubSubDivStyle}`} key={link.id}>
+          <div className={` ${customClass.customSubSubDivStyle} ${link.backgroundClass}`} key={link.id}>
             <h4 className={` ${customClass.customH4Style}`}>{link.title}</h4>
             {link.listArray && (
               <ul className={` ${customClass.customUlStyle}`}>
